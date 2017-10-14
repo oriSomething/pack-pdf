@@ -1,0 +1,38 @@
+<style>
+  :host {
+    height: 100%;
+    display: block;
+    user-select: none;
+    cursor: default;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #ddd;
+    border: dashed 5px transparent;
+    border-radius: 10px;
+    transition: background-color 250ms;
+  }
+
+  .body--dragOver {
+    background-color: #666;
+    border: dashed 5px #333;
+  }
+
+  .body--dragOver>.title {
+    color: white;
+  }
+
+  .title {
+    margin: auto;
+  }
+</style>
+<div id="body" class="body">
+  <div class="title">File uploader</div>
+</div>

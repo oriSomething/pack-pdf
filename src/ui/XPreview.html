@@ -1,0 +1,47 @@
+<style>
+  :host {
+    --size: 300px;
+
+    width: var(--size);
+    display: block;
+    position: relative;
+    overflow-y: auto;
+    background-color: #ccc;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .body {
+    top: 0;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 10px);
+    position: absolute;
+  }
+
+  .body>x-preview-image {
+    left: 10px;
+    width: calc(100% - 20px);
+    position: absolute;
+  }
+
+  .XPreviewImage--allowTransition {
+    transition: transform 250ms, opacity 250ms, top 250ms;
+  }
+
+  .body-hidden {
+    height: 100%;
+    padding: 20px;
+  }
+
+  .body-hidden>x-preview-image {
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+</style>
+
+<div class="body-hidden"></div>
+<div class="body"></div>

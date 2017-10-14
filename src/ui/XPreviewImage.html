@@ -1,0 +1,47 @@
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  :host {
+    padding: 5px;
+    margin-bottom: 20px;
+    display: block;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, .3) 0 1px 5px 0;
+  }
+
+  :host(.XPreviewImage--dragOver) {
+    background-color: #ddd;
+    transform: scale(1.1);
+  }
+
+  :host(.XPreviewImage--dragStart) {
+    opacity: .3;
+    transform: scale(0.9);
+  }
+
+  :host([hidden]) {
+    display: none;
+    visibility: hidden;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  div {
+    margin-top: 5px;
+    overflow: hidden;
+    font-size: 10px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+</style>
+
+<img id="img" draggable="false" src="">
+<div id="text" draggable="false"></div>
+<div id="size" draggable="false"></div>
+<div id="page" draggable="false"></div>

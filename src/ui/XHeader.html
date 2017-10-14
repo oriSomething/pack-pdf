@@ -1,0 +1,31 @@
+<style>
+  :host {
+    display: block;
+    background-color: #ddd;
+  }
+
+  .body {
+    padding: 20px
+  }
+
+  .button {
+    border-radius: 2px;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-image: linear-gradient(#ccc, #bbb);
+    cursor: pointer;
+    outline: none;
+  }
+
+  .button:active {
+    top: 1px;
+    position: relative;
+    background-image: linear-gradient(#bbb, #ccc);
+  }
+</style>
+<div class="body">
+  <button id="clear" type="button" class="button">clear</button>
+  <button id="download" type="button" class="button">download</button>
+</div>

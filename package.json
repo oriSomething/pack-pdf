@@ -1,0 +1,21 @@
+{
+  "name": "pack-pdf",
+  "version": "0.0.1",
+  "description": "Pack images to a PDF file",
+  "main": "index.js",
+  "author": "Ori Livni",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/jspdf": "^1.1.31",
+    "lodash": "^4.17.4",
+    "rollup": "^0.50.0",
+    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-pluginutils": "^2.0.1",
+    "typescript": "^2.5.3"
+  },
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "start": "rollup --config rollup.config.js -w"
+  }
+}
