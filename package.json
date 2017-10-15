@@ -16,6 +16,8 @@
     "typescript": "^2.5.3"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d public",
     "build": "rollup --config rollup.config.js",
     "start": "rollup --config rollup.config.js -w"
   }
